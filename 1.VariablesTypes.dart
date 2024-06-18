@@ -1,3 +1,6 @@
+// Variable is box that contains data
+// Data Types are Integer, Double, String, Boolean, List, Map
+
 void main() {
   // declaration of variable
   int b;
@@ -29,4 +32,17 @@ void main() {
 
   bool islogin = false;
   islogin = true;
+
+  // List Type
+  List<String> fruits = ["Apple", "Mango"];
+
+  // Map Type
+  Map<String, dynamic> myData = {
+    "name": name,
+    "age": 21,
+    "male": "male",
+    "fruits": fruits
+  };
+
+  print(myData);
 }

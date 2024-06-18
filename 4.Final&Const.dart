@@ -1,3 +1,8 @@
+// final - runtime, can reside inside a class
+// const - compiel time, can not reside inside a class
+
+import 'dart:collection';
+
 main() {
   final name = 'Lucifer';
   // below code give you error because value set only once in final
@@ -11,7 +16,7 @@ main() {
   rollno = 15;
 
   // The constant must be initialized and inline
-  const no = 7;
+  const double no = 7.5;
 
   // if list is const then we can not modify it but in final we can
   // The below code give you error
@@ -29,4 +34,17 @@ main() {
 
   // we can not override whole list but we can change the data
   // names=["D","E","F"];
+}
+
+class my {
+  final String name = "Kali";
+  // we can not assign const variable inside a class we have to make it static
+  static const double e = 02.71;
+}
+
+class Another {
+  double x = my.e;
+
+  //Give you error
+  //String name = my.name;
 }

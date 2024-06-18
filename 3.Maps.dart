@@ -1,3 +1,5 @@
+// Maps store data in Key-Values pair
+
 main() {
   var mymap = {
     'Key1': 'Value1',
@@ -34,4 +36,11 @@ main() {
   print('containsValue: ${map2.containsValue(false)}');
   print('remove key: ${map2.remove('Age')}');
   print(map2);
+
+  Map<String, dynamic> myData = {"name": "Lucy", "age": 21, "male": "male"};
+  print(myData);
+  print(myData["age"]);
+  print(myData.keys.toList());
+  print(myData.values.toList());
+  print(myData.containsKey("contact"));
 }

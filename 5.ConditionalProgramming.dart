@@ -1,3 +1,5 @@
+// if - else if - else
+
 main() {
   var a = 500;
   var b = 50;
@@ -18,5 +20,21 @@ main() {
   } else {
     //all cond are false
     print("Block Else");
+  }
+
+  int age = 115;
+  String vote = voteFunction(age);
+  print(vote);
+}
+
+String voteFunction(int age) {
+  if (age >= 18 && age < 100) {
+    return "You can vote";
+  } else if (age >= 100) {
+    return "Are you sure? You are living?";
+  } else if (age <= 0) {
+    return "You are not born";
+  } else {
+    return "You can not vote";
   }
 }

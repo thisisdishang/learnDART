@@ -1,3 +1,5 @@
+// Lists can be static or dynamic type
+
 main() {
   var listNum = [10, 20, 30, 40];
   listNum.add(50);
@@ -45,4 +47,13 @@ main() {
   print("Is Empty: ${names.isEmpty}");
   print("Is Not Empty: ${names.isNotEmpty}");
   print("Element At 1: ${names.elementAt(1)}");
+
+  List<String> fruits = ["apple", "banana"];
+  fruits.addAll(["mango", "grapes", "guava"]);
+  fruits.sort();
+  bool val = fruits.contains("apple");
+  print(val);
+
+  print(fruits.where((element) => element == "kiwi" || element == "apple"));
+  print(fruits);
 }
