@@ -7,10 +7,13 @@ void main() {
 
   subject = 'Dart Programming';
 
+  //below code give you error 'cause it's initialize with string
+  //subject = 1;
+
   print(subject);
 
   var section;
-  // here variable section is dynamic that's why no error in below code
+  // here variable 'section' is dynamic that's why no error in below code
   // runtime override change value and datatype
   section = 'D'; // string
 
@@ -18,6 +21,10 @@ void main() {
 
   section = false; // bool
 
-  // other way to declare dynamic value
+  // Using dynamic keyword we can also declare dynamic value
   dynamic divison;
+
+  divison = 7; // int
+
+  divison = ['A', 'B', 'C', 'D']; // list
 }
