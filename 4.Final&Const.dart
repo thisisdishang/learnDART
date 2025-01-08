@@ -1,8 +1,5 @@
 // final - runtime, can reside inside a class
 // const - compiel time, can not reside inside a class
-
-import 'dart:collection';
-
 main() {
   final name = 'Lucifer';
   // below code give you error because value set only once in final

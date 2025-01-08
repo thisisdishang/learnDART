@@ -1,7 +1,6 @@
 // Constructor is first function run whenever object is created
 // You can not have default constructor and parameterised constructor inside same class.
 
-import '16.ClassObject.dart';
 
 class Mathematics {
   int n1 = 0, n2 = 0;
