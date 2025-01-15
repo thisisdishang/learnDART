@@ -1,7 +1,7 @@
 // List collection in dart
-void main(){
-  List<int> number=[7,15,20,6];
-  List<String> city=["Surat","Vadodara","Ahmedabad"];
+void main() {
+  List<int> number = [7, 15, 20, 6];
+  List<String> city = ["Surat", "Vadodara", "Ahmedabad"];
 
   // access item of list
   print(city[0]);
@@ -13,11 +13,11 @@ void main(){
   print("Length of list: ${city.length}");
 
   // change values of list
-  number[1]=13;
+  number[1] = 13;
   print(number);
 
   // immutable list
-  const List<String> name=["Alpha","Beta","Gamma"];
+  const List<String> name = ["Alpha", "Beta", "Gamma"];
 
   // first item of list
   print(number.first);
@@ -28,7 +28,7 @@ void main(){
   // Check list is empty or not
   print(city.isEmpty);
 
-  List<int> prime=[];
+  List<int> prime = [];
   print(prime.isEmpty);
 
   print(city.isNotEmpty);
@@ -38,7 +38,7 @@ void main(){
 
   // add item to list
   city.add("Dwarka");
-  city.addAll(["Valsad","Navsari"]);
+  city.addAll(["Valsad", "Navsari"]);
   print(city);
 
   // insert item to specific location
@@ -46,7 +46,7 @@ void main(){
   print(city);
 
   // replace range of list
-  number.replaceRange(1, 3, [8,9,1,4,10]);
+  number.replaceRange(1, 3, [8, 9, 1, 4, 10]);
   print(number);
 
   // remove list item
@@ -66,15 +66,15 @@ void main(){
   print(number);
 
   // loops in list
-  city.forEach((h)=>print(h));
+  city.forEach((h) => print(h));
 
   // combine two list
-  List<String> combine=[...name,...city];
+  List<String> combine = [...name, ...city];
   print(combine);
 
   // where in list
-  List<int> numbers = [1,2,3,4,5,6,7,8,9,10,11,12,13,14];
+  List<int> numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14];
 
-  List<int> odd = numbers.where((n)=>n.isOdd).toList(); 
+  List<int> odd = numbers.where((n) => n.isOdd).toList();
   print(odd);
 }

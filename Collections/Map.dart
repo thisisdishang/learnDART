@@ -1,12 +1,12 @@
 // Map collection in dart
-void main(){
-  Map<int,String> student={1:"Lucifer",2:"Alice",3:"Rayon"};
+void main() {
+  Map<int, String> student = {1: "Lucifer", 2: "Alice", 3: "Rayon"};
   print(student);
   print(student[3]);
   print("All keys: ${student.keys}");
   print("All values: ${student.values}");
   print("Length: ${student.length}");
-  student[4]="Keir";
+  student[4] = "Keir";
   print(student);
   print(student.keys.toList());
   print(student.values.toList());
@@ -20,5 +20,5 @@ void main(){
     print("Key: ${i.key}, Value: ${i.value}");
   }
 
-  student.forEach((key,value)=>print("$key $value"));
+  student.forEach((key, value) => print("$key $value"));
 }

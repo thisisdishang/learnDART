@@ -1,8 +1,9 @@
 // Set collection in dart
 
 import 'dart:io';
-void main(){
-  Set<String> color={"Red","Blue","Green"};
+
+void main() {
+  Set<String> color = {"Red", "Blue", "Green"};
   print(color.runtimeType);
   print(color);
 
@@ -15,7 +16,7 @@ void main(){
 
   color.add("White");
   color.remove("Red");
-  color.addAll({'Red','Yellow'});
+  color.addAll({'Red', 'Yellow'});
   print(color);
 
   for (var element in color) {
